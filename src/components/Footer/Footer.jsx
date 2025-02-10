@@ -15,15 +15,44 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
-
-      <Box sx={{display:"flex", flexDirection: "row", justifyContent: "center", alignItems: "center", my:5}}>
-        <List sx={{color: "white", display: "flex", flexDirection: "row", gap: 15, listStyle: "none", padding: 0, margin: 0 }}>
-          <ListItem sx={{ display: "inline", padding: 0 }}><Link sx={{color:"white"}} href="/">Home</Link></ListItem>
-          <ListItem sx={{ display: "inline", padding: 0 }}><Link sx={{color:"white"}} href="/about">About</Link></ListItem>
-          <ListItem sx={{ display: "inline", padding: 0 }}><Link sx={{color:"white"}} href="/contact">Contact</Link></ListItem>
-        </List>
-      </Box>
-     
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: "center",
+            alignItems: "center",
+            my: 5,
+          }}
+        >
+          <List
+            sx={{
+              color: "white",
+              display: "flex",
+              flexDirection: { xs: "column", sm: "row" },
+              gap: { xs: 2, sm: 15 },
+              listStyle: "none",
+              padding: 0,
+              margin: 0,
+              alignItems: { xs: "center", sm: "flex-start" },
+            }}
+          >
+            <ListItem sx={{ padding: 0 }}>
+              <Link sx={{ color: "white" }} href="/">
+                Home
+              </Link>
+            </ListItem>
+            <ListItem sx={{ padding: 0 }}>
+              <Link sx={{ color: "white" }} href="/about">
+                About
+              </Link>
+            </ListItem>
+            <ListItem sx={{ padding: 0 }}>
+              <Link sx={{ color: "white" }} href="/contact">
+                Contact
+              </Link>
+            </ListItem>
+          </List>
+        </Box>
 
         <Typography variant="body2" color="white" align="center">
           {"© "}Marc {new Date().getFullYear()}
