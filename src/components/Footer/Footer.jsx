@@ -37,17 +37,17 @@ const Footer = () => {
             }}
           >
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/">
+              <Link sx={{ color: "white" }} href="/homepage/">
                 Home
               </Link>
             </ListItem>
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/about">
+              <Link sx={{ color: "white" }} href="/homepage/about">
                 About
               </Link>
             </ListItem>
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/contact">
+              <Link sx={{ color: "white" }} href="/homepage/contact">
                 Contact
               </Link>
             </ListItem>
