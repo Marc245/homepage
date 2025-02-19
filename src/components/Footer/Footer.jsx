@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography, Container, Link } from "@mui/material";
+import { Box, Typography, Container } from "@mui/material";
 import { List, ListItem } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -37,17 +39,17 @@ const Footer = () => {
             }}
           >
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/homepage/">
+              <Link sx={{ color: "white" }} to="/">
                 Home
               </Link>
             </ListItem>
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/homepage/about">
+              <Link sx={{ color: "white" }} to="/about">
                 About
               </Link>
             </ListItem>
             <ListItem sx={{ padding: 0 }}>
-              <Link sx={{ color: "white" }} href="/homepage/contact">
+              <Link sx={{ color: "white" }} to="/contact">
                 Contact
               </Link>
             </ListItem>
