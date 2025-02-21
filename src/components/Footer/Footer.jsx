@@ -57,7 +57,7 @@ const Footer = () => {
         </Box>
 
         <Typography variant="body2" color="white" align="center">
-          {"© "}Maerrc {new Date().getFullYear()}
+          {"© "}Marc {new Date().getFullYear()}
           {". All rights reserved."}
         </Typography>
       </Container>
