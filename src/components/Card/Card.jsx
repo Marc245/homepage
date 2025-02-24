@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import data from '../../data/cards.json';
 import { Box } from '@mui/system';
-import hirschkaefer from './assets/hirschkaefer.jpg';
+import hirschkaefer from 'src/assets/hirschkaefer.jpg';
 
 export default function Card() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
