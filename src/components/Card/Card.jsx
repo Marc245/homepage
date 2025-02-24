@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import data from '../../data/cards.json';
 import { Box } from '@mui/system';
+import hirschkaefer from './assets/hirschkaefer.jpg';
 
 export default function Card() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -44,7 +45,7 @@ export default function Card() {
             component="img"
             alt="person image"
             height="140"
-            image={`public/assets/hirschkaefer.jpg`}
+            image={hirschkaefer}
           />
           <CardContent sx={{ height: '200px' }}>
             <Typography gutterBottom variant="h5" component="div">
