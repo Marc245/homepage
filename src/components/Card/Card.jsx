@@ -45,7 +45,7 @@ export default function Card() {
             component="img"
             alt="person image"
             height="140"
-            image="/hirschkaefer.jpg"
+            image={`${process.env.PUBLIC_URL}/hirschkaefer.jpg`}
           />
           <CardContent sx={{ height: '200px' }}>
             <Typography gutterBottom variant="h5" component="div">
