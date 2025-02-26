@@ -18,7 +18,7 @@ const theme = createTheme({
       main: "#80A4ED", 
     },
     secondary: {
-      main: '#88A61C',  
+      main: "#0b03fc",  
     },
     fancyblue: {
       main: "#0b03fc",

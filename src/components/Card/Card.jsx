@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import data from '../../data/cards.json';
 import { Box } from '@mui/system';
-
+import hirschkaefer from "../../assets/hirschkaefer.jpg"
 
 export default function Card() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -41,17 +41,21 @@ export default function Card() {
           }}
         >
           <CardMedia
-            sx={{ height: 140, overflow: 'hidden' }}
+            sx={{ height: 160, overflow: 'hidden' }}
             component="img"
             alt="person image"
-            height="140"
-            image="/public/hirschkaefer.jpg"
+            //image={url("../../assets/hirschkaefer.jpg")}
+            //image="../assets/hirschkaefer.jpg"
+            //image={hirschkaefer}
+            image={person.picture}
+            //image="images/hirschkaefer.jpg"
+
           />
           <CardContent sx={{ height: '200px' }}>
             <Typography gutterBottom variant="h5" component="div">
               {person.name}
             </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            <Typography variant="body2" sx={{ color: 'black' }}>
               {person.text}
             </Typography>
           </CardContent>
